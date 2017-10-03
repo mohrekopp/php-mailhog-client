@@ -1,0 +1,21 @@
+sudo: required
+
+language: php
+
+php:
+  - '7.0'
+  - '7.1'
+
+services:
+  - docker
+
+install:
+  - composer require php-http/curl-client
+
+before_script:
+  - cp .env.dist .env
+  - docker-compose up
+  - composer run test-seed-mailhog
+
+script:
+  - composer run test

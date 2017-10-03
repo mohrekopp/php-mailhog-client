@@ -2,21 +2,28 @@
 
 PHP-Client for the Mailhog-API (v2) based on [HTTPlug](https://github.com/php-http/httplug)
 
+[![Build Status](https://travis-ci.org/mohrekopp/php-mailhog-client.svg?branch=master)](https://travis-ci.org/mohrekopp/php-mailhog-client)
+
+
 ## Installation
-    
-    composer require mohrekopp/php-mailhog-client
-    
+
+```
+composer require mohrekopp/php-mailhog-client
+```
 
 Since HTTPlug is just an abstraction, you have to install a client or an adapter,
 e.g. CURL-client:
-    
-    composer require php-http/curl-client
-    
+
+```
+composer require php-http/curl-client
+```
     
 Or Guzzle6-adapter:
 
-    composer require php-http/guzzle6-adapter
-    
+```
+composer require php-http/guzzle6-adapter
+``` 
+
     
 ## Usage
 
@@ -63,21 +70,23 @@ $client->searchMessages($criteria);
 
 1. You have to install a HTTPlug-Client:
 
-    
-    composer require php-http/curl-client
-    
+```
+composer require php-http/curl-client
+```
+
 2. Copy the .env.dist file and start a docker-container for Mailhog:
-    
-    
-    cp .env.dist .env
-    docker-compose up -d
+
+```
+cp .env.dist .env
+docker-compose up -d
+```
 
 3. Seed Mailhog with testdata and run tests
 
-    
-    composer run test-seed-mailhog
-    composer run test-functional
-    
+```
+composer run test-seed-mailhog
+composer run test-functional
+```
 
 ## License
 

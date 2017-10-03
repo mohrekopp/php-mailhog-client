@@ -1,0 +1,7 @@
+/vendor/
+.env
+.DS_Store
+composer.lock
+.idea/
+#my-swagger-with-refs.yaml
+#my-swagger.yaml

@@ -1,0 +1,142 @@
+{
+  "total": 2,
+  "count": 2,
+  "start": 0,
+  "items": [
+    {
+      "ID": "hlNXR8K9IfJZJwooalFlkc3lngBUSMQBNvqoTeWtZe0=@mailhog.example",
+      "From": {
+        "Relays": null,
+        "Mailbox": "foo",
+        "Domain": "example.com",
+        "Params": ""
+      },
+      "To": [
+        {
+          "Relays": null,
+          "Mailbox": "baz",
+          "Domain": "domain.org",
+          "Params": ""
+        }
+      ],
+      "Content": {
+        "Headers": {
+          "Content-Transfer-Encoding": [
+            "quoted-printable"
+          ],
+          "Content-Type": [
+            "text/plain; charset=utf-8"
+          ],
+          "Date": [
+            "Tue, 15 Aug 2017 15:30:16 +0200"
+          ],
+          "From": [
+            "Foo Bar \u003cfoo@example.com\u003e"
+          ],
+          "MIME-Version": [
+            "1.0"
+          ],
+          "Message-ID": [
+            "\u003cec7ce5c88e212620991213b80f26ceab@swift.generated\u003e"
+          ],
+          "Received": [
+            "from  by mailhog.example (MailHog)\r\n          id hlNXR8K9IfJZJwooalFlkc3lngBUSMQBNvqoTeWtZe0=@mailhog.example; Tue, 15 Aug 2017 13:30:16 +0000"
+          ],
+          "Return-Path": [
+            "\u003cfoo@example.com\u003e"
+          ],
+          "Subject": [
+            "Testmessage2 Subject"
+          ],
+          "To": [
+            "baz@domain.org"
+          ]
+        },
+        "Body": "Testmessage",
+        "Size": 305,
+        "MIME": null
+      },
+      "Created": "2017-08-15T13:30:16.989997518Z",
+      "MIME": null,
+      "Raw": {
+        "From": "foo@example.com",
+        "To": [
+          "baz@domain.org"
+        ],
+        "Data": "Message-ID: \u003cec7ce5c88e212620991213b80f26ceab@swift.generated\u003e\r\nDate: Tue, 15 Aug 2017 15:30:16 +0200\r\nSubject: Testmessage2 Subject\r\nFrom: Foo Bar \u003cfoo@example.com\u003e\r\nTo: baz@domain.org\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nTestmessage",
+        "Helo": ""
+      }
+    },
+    {
+      "ID": "OelnUKHuPpjBdN7AknU7IfT17DMb8lXrdDsx9uiEyGU=@mailhog.example",
+      "From": {
+        "Relays": null,
+        "Mailbox": "john",
+        "Domain": "doe.com",
+        "Params": ""
+      },
+      "To": [
+        {
+          "Relays": null,
+          "Mailbox": "receiver",
+          "Domain": "domain.org",
+          "Params": ""
+        },
+        {
+          "Relays": null,
+          "Mailbox": "other",
+          "Domain": "domain.org",
+          "Params": ""
+        }
+      ],
+      "Content": {
+        "Headers": {
+          "Content-Transfer-Encoding": [
+            "quoted-printable"
+          ],
+          "Content-Type": [
+            "text/plain; charset=utf-8"
+          ],
+          "Date": [
+            "Tue, 15 Aug 2017 15:30:16 +0200"
+          ],
+          "From": [
+            "John Doe \u003cjohn@doe.com\u003e"
+          ],
+          "MIME-Version": [
+            "1.0"
+          ],
+          "Message-ID": [
+            "\u003c697c76a076a5c66e6096e2e1edd1a58e@swift.generated\u003e"
+          ],
+          "Received": [
+            "from [127.0.0.1] by mailhog.example (MailHog)\r\n          id OelnUKHuPpjBdN7AknU7IfT17DMb8lXrdDsx9uiEyGU=@mailhog.example; Tue, 15 Aug 2017 13:30:16 +0000"
+          ],
+          "Return-Path": [
+            "\u003cjohn@doe.com\u003e"
+          ],
+          "Subject": [
+            "Wonderful Subject"
+          ],
+          "To": [
+            "receiver@domain.org, A name \u003cother@domain.org\u003e"
+          ]
+        },
+        "Body": "Here is the message itself",
+        "Size": 347,
+        "MIME": null
+      },
+      "Created": "2017-08-15T13:30:16.981512618Z",
+      "MIME": null,
+      "Raw": {
+        "From": "john@doe.com",
+        "To": [
+          "receiver@domain.org",
+          "other@domain.org"
+        ],
+        "Data": "Message-ID: \u003c697c76a076a5c66e6096e2e1edd1a58e@swift.generated\u003e\r\nDate: Tue, 15 Aug 2017 15:30:16 +0200\r\nSubject: Wonderful Subject\r\nFrom: John Doe \u003cjohn@doe.com\u003e\r\nTo: receiver@domain.org, A name \u003cother@domain.org\u003e\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nHere is the message itself",
+        "Helo": "[127.0.0.1]"
+      }
+    }
+  ]
+}

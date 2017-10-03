@@ -1,0 +1,54 @@
+{
+    "name": "mohrekopp/php-mailhog-client",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chinthujan Sehasothyy",
+            "email": "chinthujan.sehasothy@googlemail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "psr/http-message": "^1.0",
+        "php-http/client-implementation": "^1.0",
+        "php-http/httplug": "^1.0",
+        "php-http/message-factory": "^1.0",
+        "php-http/discovery": "^1.0",
+        "doctrine/collections": "^1.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "squizlabs/php_codesniffer": "~2.6",
+        "friendsofphp/php-cs-fixer": "~1.12",
+        "swiftmailer/swiftmailer": "^6.0",
+        "php-http/mock-client": "^1.0",
+        "php-http/message": "^1.0",
+        "guzzlehttp/psr7": "^1.0",
+        "symfony/dotenv": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mohrekopp\\MailHogClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mohrekopp\\MailHogClient\\Tests\\Unit\\": "tests/unit/",
+            "Mohrekopp\\MailHogClient\\Tests\\Functional\\": "tests/functional/"
+        }
+    },
+    "scripts": {
+        "test-unit": "phpunit --testsuite=unit",
+        "test-functional": "phpunit --testsuite=functional",
+        "test-seed-mailhog": "@php ./tests/functional/seed.php",
+        "test": [
+            "@test-unit",
+            "@test-functional"
+        ]
+    }
+}

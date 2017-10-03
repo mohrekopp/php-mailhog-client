@@ -14,7 +14,7 @@ install:
 
 before_script:
   - cp .env.dist .env
-  - docker-compose up
+  - docker-compose up -d
   - composer run test-seed-mailhog
 
 script:
